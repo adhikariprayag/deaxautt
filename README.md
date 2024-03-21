@@ -1,4 +1,4 @@
-# Site Deployed at: https://app.netlify.com/sites/deaxaut/overview
+# Site Deployed at: https://deaxaut.netlify.app/
 Tools Used:
 <ul>
   <li>React Js</li>
