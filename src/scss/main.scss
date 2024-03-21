@@ -1,0 +1,52 @@
+/*-----PRIMARY SCSS FILE-----*/
+
+@import 'variables';
+@import 'mixin';
+@import 'button';
+@import 'navbar';
+
+/*-----UNIVERSAL CLASSES-----*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: light;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Geologica", sans-serif;
+}
+
+img {
+    display: block;
+}
+/*-----UNIVERSAL CLASSES-----*/
+
+
+/*-----RESUABLE BUTTON COMPONENT CLASSES-----*/
+.sky {
+    background-color: $sky;
+
+    &::after {
+        background-color: $dsky;
+    }
+}
+
+.red {
+    background-color: $red;
+
+    &::after {
+        background-color: $dred;
+    }
+}
+/*-----RESUABLE BUTTON COMPONENT CLASSES-----*/
+
+.active{
+    color: $sky;
+}
