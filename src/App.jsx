@@ -1,17 +1,26 @@
 import React from 'react'
-import Button from './components/Button'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+//IMPORTING COMPONENTS
 import Navbar from './components/Navbar'
+import Gtt from './components/Gtt'
+
+//IMPORTING PAGES
+import Home from './pages/Home'
+import Services from './pages/Services'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-        <Button cta="Load More" style="sky" link='/' />
+        <Navbar />
+
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/services' element={<Services/>}/>
+        </Routes>
+
+        <Gtt />
       </BrowserRouter>
     </>
   )

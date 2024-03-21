@@ -1,0 +1,86 @@
+/*-----HOME SCSS-----*/
+
+.home {
+
+    &-container {
+        min-height: 90dvh;
+        border-bottom: 4px solid rgba(189, 189, 189, 0.292);
+
+        h2 {
+            color: $main;
+            font-weight: $semi-bold;
+            line-height: 4rem;
+
+            @media (max-width: 640px) {
+                line-height: 2rem;
+            }
+        }
+
+        p {
+            color: rgb(85, 85, 85);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        input {
+            border-radius: 5px 0px 0px 5px;
+            border-bottom: 1px solid #fff ;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            font-weight: $normal;
+            outline: none;
+            @include transition;
+            box-sizing: border-box;
+            filter: drop-shadow(10px 13mm 15mm rgba(66, 115, 252, 0.714));
+
+            @media (max-width:640px) {
+                border-radius: 5px;
+                filter: drop-shadow(10px 13mm 15mm rgba(66, 116, 252, 0.115));
+            }
+        }
+
+        input:focus {
+            border-bottom: 1px solid $sky ;
+            border-top: 1px solid $sky;
+            border-left: 1px solid $sky;
+        }
+
+        .home-sbtn {
+            background-color: $sky;
+            padding: 1rem 30px;
+            border-radius: 0px 5px 5px 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border: 1px solid $sky;
+            @include transition;
+
+            @media (max-width:640px) {
+                border-radius: 5px;
+            }
+
+            &:hover{
+                background-color: $main;
+            }
+        }
+
+        .home-images{
+            .img-1{
+                filter: drop-shadow(0px 13mm 10mm rgba(110, 149, 255, 0.714));
+                z-index: -10;
+
+               @media (max-width: 1024px) {
+                opacity: 0.5;
+               }
+
+               @media (max-width: 640px) {
+                width: 80%;
+               }
+            }
+
+            .img-2{
+                filter: drop-shadow(0 -6mm 10mm rgba(43, 99, 255, 0.332));
+                z-index: -10;
+            }
+        }
+    }
+}

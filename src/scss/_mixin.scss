@@ -1,5 +1,6 @@
-//MIXIN SCSS
+/*-----MIXIN SCSS-----*/
 
+//primary button mixin
 @mixin mainButton {
     display: inline-block;
     position: relative;
@@ -12,14 +13,17 @@
     z-index: 2;
 }
 
+//transition mixin
 @mixin transition {
     transition: all 0.4s;
 }
 
+//box shadow mixin
 @mixin shadow {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
+//media query mixin
 @mixin midScreen ($max: 990px, $dis: none) {
     @media (max-width:$max) {
         display: $dis;

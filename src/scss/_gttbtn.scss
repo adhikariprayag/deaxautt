@@ -1,0 +1,17 @@
+/*-----GO TO TOP BUTTON CLASSES-----*/
+
+.gtt-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 15px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: $dred;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    @include transition;
+
+    &:hover{
+        filter: invert(20%);
+    }
+}

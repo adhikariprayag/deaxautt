@@ -1,6 +1,7 @@
 import React from 'react'
-import '../scss/main.scss'
 import { Link } from 'react-router-dom';
+
+import '../scss/main.scss'
 
 
 function Button(props) {
@@ -15,3 +16,6 @@ function Button(props) {
 }
 
 export default Button
+
+//USAGE EXAMPLE
+{/* <Button cta="Load More" style="sky" link='/' /> */}

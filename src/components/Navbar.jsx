@@ -72,9 +72,9 @@ function Navbar() {
             </nav>
 
             {/* SIDE MENU */}
-            <div className={`navbar-offcanvas h-[100dvh] sm:w-[50%] md:w-[30%] w-[90%] fixed top-0 right-0 bg-white z-[50001] animate__animated ${handlemenu} `}>
+            <div className={`navbar-offcanvas h-[100dvh] sm:w-[50%] md:w-[30%] w-[90%] fixed top-0 right-0 bg-white z-[50001] animate__animated animate__fast ${handlemenu} `}>
 
-                <div className='px-4 py-5'>
+                <div className='px-4 py-4'>
                     <div className='offcanvas-top flex justify-between flex-wrap py-8 '>
                         <img src={sideLogo} alt="Logo" />
                         <i className="ri-close-circle-line text-2xl text-gray-500 cursor-pointer" onClick={handle}></i>
@@ -142,7 +142,7 @@ function Navbar() {
             {/* SIDE MENU */}
 
             {/* SEARCH MENU */}
-            <div className={`search-menu-full absolute top-0 left-0 w-full h-full z-[9999] flex items-center justify-center animate__animated ${handlesearch}`}>
+            <div className={`search-menu-full fixed top-0 left-0 w-full h-full z-[9999] flex items-center justify-center animate__animated ${handlesearch}`}>
                 <form action="" className='w-[50%] mx-auto align-middle'>
                     <div className='input-box relative'>
                         <input type="text" name="search" id="search" placeholder='Enter Your Key Words...' className='py-5 w-full bg-transparent' />
