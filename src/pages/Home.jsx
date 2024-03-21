@@ -16,7 +16,7 @@ function Home() {
 
                 <form action="" className='flex flex-wrap sm:flex-nowrap gap-3 sm:gap-0 justify-center'>
                     <input type="text" name="name" id="name" placeholder='Enter Your Name' className='py-4 px-8 w-full'/>
-                    <button type="submit" className='home-sbtn font-bold text-white'>Get Started</button>
+                    <button type="submit" className='home-sbtn font-bold text-white '>Get Started</button>
                 </form>
 
                 <div className="home-images">
