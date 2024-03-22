@@ -9,7 +9,7 @@ function Gtt() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if(window.scrollY > 100) {
+            if(window.scrollY > 300) {
                 setgttbtn(true)
             } else {
                 setgttbtn(false)

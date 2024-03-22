@@ -63,3 +63,37 @@ img {
 .active{
     color: $sky;
 }
+
+.header-sm{
+    color: $main;
+    font-weight: 300;
+}
+
+.title-sm{
+    color: $sky;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 99%;
+        min-height: 8px;
+        background: #a57bff5c;
+        bottom: 8px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.semi-bold{
+    font-weight: 500;
+    //sm:text-3xl text-2xl
+}
+
+.mClr{
+    color: $main !important;
+}

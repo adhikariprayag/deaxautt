@@ -20,11 +20,15 @@
             color: rgb(85, 85, 85);
             font-size: 1.2rem;
             font-weight: 300;
+
+            @media (max-width: 640px) {
+                font-size: 0.9rem;
+            }
         }
 
         input {
             border-radius: 5px 0px 0px 5px;
-            border-bottom: 1px solid #fff ;
+            border-bottom: 1px solid #fff;
             border-top: 1px solid #fff;
             border-left: 1px solid #fff;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -38,17 +42,21 @@
                 border-radius: 5px;
                 filter: drop-shadow(10px 13mm 15mm rgba(66, 116, 252, 0.115));
             }
-        }
 
-        input:focus {
-            border-bottom: 1px solid $sky ;
-            border-top: 1px solid $sky;
-            border-left: 1px solid $sky;
+            &:focus {
+                border-bottom: 1px solid $sky ;
+                border-top: 1px solid $sky;
+                border-left: 1px solid $sky;
+
+                @media (max-width:640px) {
+                    border: 1px solid $sky;
+                }
+            }
         }
 
         .home-sbtn {
             background-color: $sky;
-            padding: 1rem 40px;
+            padding: 1rem 10px;
             border-radius: 0px 5px 5px 0px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             border: 1px solid $sky;
@@ -58,28 +66,111 @@
                 border-radius: 5px;
             }
 
-            &:hover{
+            &:hover {
                 background-color: $main;
             }
         }
 
-        .home-images{
-            .img-1{
+        .home-images {
+            .img-1 {
                 filter: drop-shadow(0px 13mm 10mm rgba(110, 149, 255, 0.714));
                 z-index: -10;
 
-               @media (max-width: 1024px) {
-                opacity: 0.5;
-               }
+                @media (max-width: 1024px) {
+                    opacity: 0.5;
+                }
 
-               @media (max-width: 640px) {
-                width: 80%;
-               }
+                @media (max-width: 640px) {
+                    width: 80%;
+                }
             }
 
-            .img-2{
+            .img-2 {
                 filter: drop-shadow(0 -6mm 10mm rgba(43, 99, 255, 0.332));
                 z-index: -10;
+            }
+        }
+    }
+
+    &-customer {
+
+        .home-slider {
+
+            img {
+                margin-inline: auto;
+                filter: invert(50%);
+                @include transition;
+
+                &:hover {
+                    filter: invert(0%);
+                }
+            }
+        }
+    }
+
+    &-services {
+
+        .service-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-block: 2.4rem;
+            padding-inline: .5rem;
+            gap: 15px;
+            border-radius: 25px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            @include transition;
+
+            &:hover {
+                background-color: $green;
+                color: #fff !important;
+
+                .box-title {
+                    color: #fff;
+                }
+
+                .box-icon {
+                    color: #fff !important;
+                }
+
+                .box-more {
+                    color: #fff;
+                }
+            }
+
+            .box {
+
+                &-icon {
+                    font-size: 6rem;
+                    @include transition;
+                }
+
+                &-title {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: $main;
+                    @include transition;
+                }
+
+                &-more {
+                    font-weight: $normal;
+                    margin-top: .6rem;
+                    color: $sky;
+                    @include transition;
+
+                    &:hover {
+                        color: $sky;
+                    }
+                }
+            }
+        }
+
+        .span-text {
+            color: $sky;
+            @include transition;
+
+            &:hover {
+                color: $green;
             }
         }
     }
