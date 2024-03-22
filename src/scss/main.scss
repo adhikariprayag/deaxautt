@@ -35,6 +35,11 @@ img {
     display: block;
 }
 
+::selection{
+    color: #fff;
+    background-color: $dred;
+}
+
 .container{
     max-width: 1400px !important;
     margin: auto !important;
@@ -76,6 +81,7 @@ img {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
+    z-index: 2;
 
     &::after{
         content: '';
@@ -85,8 +91,14 @@ img {
         background: #a57bff5c;
         bottom: 8px;
         left: 0;
-        z-index: -1;
+        z-index: 1;
     }
+}
+
+.title-md{
+    font-weight: 600;
+    color: $main;
+    font-size: 1.4rem;
 }
 
 .semi-bold{
@@ -97,3 +109,26 @@ img {
 .mClr{
     color: $main !important;
 }
+
+
+//TEXT ANIMATION
+.ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }

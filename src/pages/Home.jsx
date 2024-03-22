@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 //--Hero images
 import hero2 from '../assets/h2-right-image.png'
 import hero1 from '../assets/h2-left-image.png'
+import hero3 from '../assets/h2-featured-right.png'
 //--Customers images
 import spn1 from '../assets/sponsors-1.png'
 import spn2 from '../assets/sponsors-2.png'
@@ -18,6 +19,10 @@ import spn3 from '../assets/sponsors-3.png'
 import spn4 from '../assets/sponsors-4.png'
 import spn5 from '../assets/sponsors-5.png'
 import spn6 from '../assets/sponsors-6.png'
+//--Icons
+import icon1 from '../assets/icon1.png'
+import icon2 from '../assets/icon2.png'
+import icon3 from '../assets/icon3.png'
 
 function Home() {
 
@@ -150,6 +155,48 @@ function Home() {
 
                         <p className='py-16 text-center font-light text-lg'>Bring them together and you overcome the ordinary. <span className='underline span-text'><a href="">See what we do</a></span></p>
                     </div>
+                </section>
+
+                <section className='home-whyUs py-10'>
+                    <div className="container px-5 relative ">
+                        <div className=''>
+                            <div className="title-sm ">WHY CHOOSE US</div>
+                            <div className="">
+                                <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 '>We help you Overcome your Technology</h2>
+                                <div className='py-10 flex flex-col gap-10'>
+                                    <div className='flex items-center gap-5 flex-wrap'>
+                                        <div><img src={icon1} alt="" className='img-icon img-icon-1 bg-[#FFF7DE]'/></div>
+                                        <div>
+                                            <div className='title-md'>Working Process</div>
+                                            <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex items-center gap-5 flex-wrap'>
+                                        <div><img src={icon2} alt="" className='img-icon img-icon-2 bg-[#FFF7DE]'/></div>
+                                        <div>
+                                            <div className='title-md'>Dedicated Team</div>
+                                            <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className='flex items-center gap-5 flex-wrap'>
+                                        <div><img src={icon3} alt="" className='img-icon img-icon-3 bg-[#FFF7DE]'/></div>
+                                        <div>
+                                            <div className='title-md'>24/7 Hours Support</div>
+                                            <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='absolute right-0 top-[50%] translate-y-[-50%] z-[-10] lg:z-10 opacity-30 lg:opacity-[1]'>
+                            <img src={hero3} alt="Earth 3d" className='mt-10' />
+                        </div>
+                        
+                    </div>
+                 
                 </section>
             </main>
         </>

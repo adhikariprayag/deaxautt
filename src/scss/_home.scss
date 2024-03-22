@@ -150,6 +150,22 @@
                     font-weight: 500;
                     color: $main;
                     @include transition;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        width: 0%;
+                        height: .5px;
+                        position: absolute;
+                        background-color: #fff;
+                        bottom: 0;
+                        left: 0;
+                        @include transition;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                    }
                 }
 
                 &-more {
@@ -171,6 +187,45 @@
 
             &:hover {
                 color: $green;
+            }
+        }
+    }
+
+    &-whyUs{
+
+        background-color: $shade;
+
+        @media (max-width: 1024px) {
+            background-color: transparent !important; 
+        }
+
+        p{
+            width: 80%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        img{
+            min-width: 65px;
+        }
+
+        .img-icon{
+            border-radius: 50%;
+            padding: 20px;
+
+            &-1{
+                border: 1px solid rgb(187, 255, 0);
+            }
+
+            &-2{
+                background-color: #F1F3FF;
+                border: 1px solid $sky;
+            }
+
+            &-3{
+                background-color: #FFF4F2;
+                border: 1px solid $dred;
             }
         }
     }
