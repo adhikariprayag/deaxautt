@@ -8,6 +8,7 @@ import Gtt from './components/Gtt'
 //IMPORTING PAGES
 import Home from './pages/Home'
 import Services from './pages/Services'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </Routes>
 
         <Gtt />
+        <Footer/>
       </BrowserRouter>
     </>
   )

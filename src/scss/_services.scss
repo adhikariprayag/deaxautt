@@ -1,21 +1,24 @@
-.services{
-    &-top{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.631), rgba(0, 0, 0, 0.617) ) ,url(../assets/breadcumb1.jpg);
+.services {
+    &-top {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.631), rgba(0, 0, 0, 0.617)), url(../assets/breadcumb1.jpg);
         background-repeat: no-repeat;
         background-position: top center;
         background-attachment: fixed;
-        
-        .nav-btn{
+
+        .nav-btn {
             border-radius: 5px;
             padding: .8rem 1.7rem;
             background-color: rgba(128, 128, 128, 0.321);
 
-            .home-link{
+            .home-link {
                 @include transition;
-                &:hover{
+
+                &:hover {
                     color: $red;
                 }
             }
         }
     }
+
+   
 }

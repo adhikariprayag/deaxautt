@@ -1,0 +1,47 @@
+footer {
+
+    .footer {
+        background-color: #FF2759;
+        position: relative;
+        z-index: 1;
+        padding-block: 18rem;
+
+        @media (max-width: 740px) {
+            padding-block: 8rem;
+        }
+
+        .svg {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -3;
+        }
+
+        .img-1 {
+            top: -2px;
+        }
+
+        .img-2 {
+            bottom: -2px;
+        }
+
+        .img-3 {
+            position: absolute;
+            left: 60%;
+            top: 25%;
+            transform: translate(-50%);
+            z-index: -1;
+
+            @media (max-width: 740px) {
+                opacity: .5;
+                left: 50%;
+                width: 50%;
+            }
+        }
+    }
+
+    .footer2 {
+        background-color: #0C0833;
+    }
+}

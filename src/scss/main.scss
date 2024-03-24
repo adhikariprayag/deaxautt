@@ -8,6 +8,7 @@
 @import 'button';
 @import 'navbar';
 @import 'gttbtn';
+@import 'footer';
 
 //IMPORTING PAGES SCSS
 @import 'home';
@@ -62,6 +63,15 @@ img {
 
     &::after {
         background-color: $dred;
+    }
+}
+
+.white{
+    background-color: $dred;
+
+    &::after{
+        background-color: $dark;
+        scale: 1.5;
     }
 }
 /*-----RESUABLE BUTTON COMPONENT CLASSES-----*/

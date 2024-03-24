@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../scss/main.scss'
+
+
 
 function Services() {
   return (
@@ -53,6 +56,8 @@ function Services() {
             <p className='py-16 text-center font-light text-lg'>Bring them together and you overcome the ordinary. <span className='underline span-text'><a href="">See what we do</a></span></p>
           </div>
         </section>
+
+        
       </main>
     </>
   )
