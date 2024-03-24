@@ -6,7 +6,7 @@ function Services() {
     <>
       <main className="services">
         <section className="services-top py-16">
-          <div className="container flex flex-col gap-3 text-white">
+          <div className="container flex flex-col gap-3 text-white px-5">
             <h3 className="page-title text-2xl font-bold">All Services</h3>
             <div className="nav-btn w-fit">
               <Link to="/" className='home-link'>Home</Link> <span className='text-xl px-3'>/</span> <span className='font-bold'>Services</span>
