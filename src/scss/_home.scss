@@ -152,7 +152,7 @@
                     @include transition;
                     position: relative;
 
-                    &::after{
+                    &::after {
                         content: '';
                         width: 0%;
                         height: .5px;
@@ -163,7 +163,7 @@
                         @include transition;
                     }
 
-                    &:hover::after{
+                    &:hover::after {
                         width: 100%;
                     }
                 }
@@ -191,41 +191,105 @@
         }
     }
 
-    &-whyUs{
+    &-whyUs {
 
         background-color: $shade;
 
         @media (max-width: 1024px) {
-            background-color: transparent !important; 
+            background-color: transparent !important;
         }
 
-        p{
+        p {
             width: 80%;
+
             @media (max-width: 768px) {
                 width: 100%;
             }
         }
 
-        img{
+        img {
             min-width: 65px;
         }
 
-        .img-icon{
+        .img-icon {
             border-radius: 50%;
             padding: 20px;
 
-            &-1{
+            &-1 {
                 border: 1px solid rgb(187, 255, 0);
             }
 
-            &-2{
+            &-2 {
                 background-color: #F1F3FF;
                 border: 1px solid $sky;
             }
 
-            &-3{
+            &-3 {
                 background-color: #FFF4F2;
                 border: 1px solid $dred;
+            }
+        }
+    }
+
+    &-projects {
+        position: relative;
+
+        .pb-con {
+            position: relative;
+
+            &:hover {
+
+                .project-box {
+                    .project-box-hover {
+                        bottom: 30%;
+                    }
+                }
+            }
+
+            .project-box {
+                margin-bottom: 6rem;
+
+                img {
+                    border-radius: 25px;
+                    height: 100%;
+                }
+
+                .project-box-hover {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    bottom: 0%;
+                    left: 50%;
+                    padding: 2rem 5rem;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include transition;
+                    @include shadow;
+                    z-index: 1000;
+                    text-align: center;
+
+                    .pb-title {
+                        color: $main;
+                        font-size: 1.5rem;
+                        font-weight: $semi-bold;
+                        @include transition;
+
+                        &:hover {
+                            color: $red;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .pb-des {
+                        color: gray;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                    }
+                }
+
             }
         }
     }

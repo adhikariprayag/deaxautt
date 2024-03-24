@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button'
 
 import '../scss/main.scss'
 
@@ -23,6 +24,11 @@ import spn6 from '../assets/sponsors-6.png'
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
+//--Projects
+import pr1 from '../assets/project_h2-01.jpg'
+import pr2 from '../assets/project_h2-02.jpg'
+import pr3 from '../assets/project_h2-03.jpg'
+import pr4 from '../assets/project_h2-04.jpg'
 
 function Home() {
 
@@ -159,21 +165,22 @@ function Home() {
 
                 <section className='home-whyUs py-10'>
                     <div className="container px-5 relative ">
-                        <div className=''>
+                        <div className='flex flex-col items-center'>
                             <div className="title-sm ">WHY CHOOSE US</div>
-                            <div className="">
+                            <div className="w-full">
                                 <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 '>We help you Overcome your Technology</h2>
                                 <div className='py-10 flex flex-col gap-10'>
                                     <div className='flex items-center gap-5 flex-wrap'>
-                                        <div><img src={icon1} alt="" className='img-icon img-icon-1 bg-[#FFF7DE]'/></div>
+                                        <div><img src={icon1} alt="" className='img-icon img-icon-1 bg-[#FFF7DE]' /></div>
                                         <div>
                                             <div className='title-md'>Working Process</div>
                                             <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
                                         </div>
                                     </div>
 
+
                                     <div className='flex items-center gap-5 flex-wrap'>
-                                        <div><img src={icon2} alt="" className='img-icon img-icon-2 bg-[#FFF7DE]'/></div>
+                                        <div><img src={icon2} alt="" className='img-icon img-icon-2 bg-[#FFF7DE]' /></div>
                                         <div>
                                             <div className='title-md'>Dedicated Team</div>
                                             <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
@@ -181,7 +188,7 @@ function Home() {
                                     </div>
 
                                     <div className='flex items-center gap-5 flex-wrap'>
-                                        <div><img src={icon3} alt="" className='img-icon img-icon-3 bg-[#FFF7DE]'/></div>
+                                        <div><img src={icon3} alt="" className='img-icon img-icon-3 bg-[#FFF7DE]' /></div>
                                         <div>
                                             <div className='title-md'>24/7 Hours Support</div>
                                             <p className='text-gray-400 font-light mt-2'>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse aliquam.</p>
@@ -194,9 +201,75 @@ function Home() {
                         <div className='absolute right-0 top-[50%] translate-y-[-50%] z-[-10] lg:z-10 opacity-30 lg:opacity-[1]'>
                             <img src={hero3} alt="Earth 3d" className='mt-10' />
                         </div>
-                        
+
                     </div>
-                 
+
+                </section>
+
+                <section className="home-projects py-10 px-5">
+                    <div className="container flex justify-center flex-col items-center ">
+                        <div className="title-sm ">OUR PROJECT</div>
+                        <div>
+                            <h2 className='sm:text-5xl text-2xl sm:w-[90%] w-full mClr mt-5 text-center mx-auto'>Some of our Finest Amazing Done Work.</h2>
+                        </div>
+                        <div className='flex mt-4 flex-wrap justify-center gap-5'>
+
+                            <div className="pb-con">
+                                <div className='project-box'>
+                                    <a href=""><img src={pr1} alt="" /></a>
+                                    <div className='project-box-hover'>
+                                        <a href=""><h5 className='pb-title'>Branding Design</h5></a>
+                                        <p className='pb-des'>Full Branding, Website, App</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pb-con">
+                                <div className='project-box'>
+                                    <a href=""><img src={pr2} alt="" /></a>
+                                    <div className='project-box-hover'>
+                                        <a href=""><h5 className='pb-title'>Digital Marketing</h5></a>
+                                        <p className='pb-des'>Website Design</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pb-con">
+                                <div className='project-box'>
+                                    <a href=""><img src={pr3} alt="" /></a>
+                                    <div className='project-box-hover'>
+                                        <a href=""><h5 className='pb-title'>3D Design</h5></a>
+                                        <p className='pb-des'>Branding Design</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pb-con">
+                                <div className='project-box'>
+                                    <a href=""><img src={pr4} alt="" /></a>
+                                    <div className='project-box-hover'>
+                                        <a href=""><h5 className='pb-title'>Social Engagement</h5></a>
+                                        <p className='pb-des'>UI/UX Design</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='mt-16'>
+                            <Button cta="Load More" style="sky" link='/' />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="home-testimonials py-10 px-5">
+                    <div className="container flex justify-center flex-col items-center ">
+                        <div className="title-sm ">TESTIMONIALS</div>
+                        <div>
+                            <h2 className='sm:text-5xl text-2xl sm:w-[90%] w-full mClr mt-5 text-center mx-auto'>Entrust Your Growth to
+Professionals</h2>
+                        </div>
+                    </div>
                 </section>
             </main>
         </>
