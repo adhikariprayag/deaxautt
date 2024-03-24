@@ -271,11 +271,19 @@
                     z-index: 1000;
                     text-align: center;
 
+                    @media (max-width: 540px) {
+                        padding: 1.2rem 1.5rem;
+                    }
+
                     .pb-title {
                         color: $main;
                         font-size: 1.5rem;
                         font-weight: $semi-bold;
                         @include transition;
+
+                        @media (max-width: 540px) {
+                            font-size: 1.2rem;
+                        }
 
                         &:hover {
                             color: $red;
@@ -287,10 +295,85 @@
                         color: gray;
                         font-weight: 300;
                         font-size: 1.2rem;
+
+                        @media (max-width: 540px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
 
             }
         }
     }
+
+    // &-testimonials {
+
+    //     background-color: $shade;
+
+
+
+    //     .testimonial-box {
+    //         width: 500px;
+    //         padding: 3rem 2rem;
+    //         border-radius: 25px;
+    //         text-align: center;
+
+    //         display: flex;
+    //         flex-direction: column;
+    //         gap: 10px;
+
+    //         @media (max-width: 768px) {
+    //             width: 50% !important;
+    //         }
+
+    //         @media (max-width: 540px) {
+    //             width: 100% !important;
+    //         }
+
+    //         @include transition;
+    //         box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    //         rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+
+    //         &:hover {
+    //             background-color: #fff;
+    //             border-bottom: 8px solid $red;
+    //         }
+
+    //         .testimonial-img {
+    //             display: flex;
+    //             justify-content: center;
+    //         }
+
+    //         .testimonial-des {
+    //             color: rgb(152, 152, 152);
+    //             font-weight: 300;
+    //             max-width: 100%;
+    //             display: none;
+    //             text-align: center;
+    //         }
+
+    //         .testimonial-icon {
+    //             font-size: 2.5rem;
+    //             color: rgb(201, 201, 201);
+    //         }
+
+    //         .testimonial-name {
+
+    //             h5 {
+    //                 color: $main;
+    //                 font-size: 1.5rem;
+    //                 font-weight: 500;
+    //             }
+
+    //             p {
+    //                 font-weight: 300;
+    //                 font-size: .9rem;
+    //                 color: rgb(131, 131, 131);
+
+    //             }
+    //         }
+    //     }
+
+    // }
 }

@@ -1,12 +1,19 @@
 import React from 'react'
-import Button from '../components/Button'
 
+import Button from '../components/Button'
 import '../scss/main.scss'
 
 //IMPORTING REACT-SLICK
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+//IMPORTING SWIPER JS
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
+
 
 //Importing Images
 //--Hero images
@@ -29,6 +36,12 @@ import pr1 from '../assets/project_h2-01.jpg'
 import pr2 from '../assets/project_h2-02.jpg'
 import pr3 from '../assets/project_h2-03.jpg'
 import pr4 from '../assets/project_h2-04.jpg'
+//-Clients
+import c1 from '../assets/client1.png'
+import c2 from '../assets/client2.png'
+import c3 from '../assets/client3.png'
+import c4 from '../assets/client4.png'
+import c5 from '../assets/client5.png'
 
 function Home() {
 
@@ -71,6 +84,8 @@ function Home() {
             }
         ]
     };
+
+    //SWIPER-JS
 
     return (
         <>
@@ -134,25 +149,25 @@ function Home() {
 
                         <div className='w-full service-boxes flex flex-wrap xl:flex-nowrap mt-10 lg:items-start  gap-5'>
                             <div className="service-box w-full lg:w-[30%] mx-2 sm:w-[45%]">
-                                <i class="ri-instance-line box-icon text-orange-600"></i>
+                                <i className="ri-instance-line box-icon text-orange-600"></i>
                                 <a href=""><h3 className='box-title'>Product Managemet</h3></a>
                                 <a href=""><p className='box-more'>Find Out More</p></a>
                             </div>
 
                             <div className="service-box box-2 w-full lg:w-[30%] mx-2 sm:w-[45%] ">
-                                <i class="ri-code-box-line box-icon text-red-500"></i>
+                                <i className="ri-code-box-line box-icon text-red-500"></i>
                                 <a href=""><h3 className='box-title mx-auto w-[60%] text-center'>Web & Mobile Development</h3></a>
                                 <a href=""><p className='box-more'>Find Out More</p></a>
                             </div>
 
                             <div className="service-box w-full lg:w-[30%] mx-2 sm:w-[45%] ">
-                                <i class="ri-tools-line box-icon text-pink-600"></i>
+                                <i className="ri-tools-line box-icon text-pink-600"></i>
                                 <a href=""><h3 className='box-title'>Fast Customer Support</h3></a>
                                 <a href=""><p className='box-more'>Find Out More</p></a>
                             </div>
 
                             <div className="service-box w-full lg:w-[30%] mx-2 sm:w-[45%] ">
-                                <i class="ri-settings-3-line box-icon text-sky-400"></i>
+                                <i className="ri-settings-3-line box-icon text-sky-400"></i>
                                 <a href=""><h3 className='box-title mx-auto w-[70%] text-center'>Digital Marketing Optimization</h3></a>
                                 <a href=""><p className='box-more'>Find Out More</p></a>
                             </div>
@@ -262,15 +277,105 @@ function Home() {
                     </div>
                 </section>
 
-                <section className="home-testimonials py-10 px-5">
-                    <div className="container flex justify-center flex-col items-center ">
+                {/* <section className="home-testimonials py-10 px-5">
+                    <div className="container flex  flex-col items-center ">
                         <div className="title-sm ">TESTIMONIALS</div>
                         <div>
-                            <h2 className='sm:text-5xl text-2xl sm:w-[90%] w-full mClr mt-5 text-center mx-auto'>Entrust Your Growth to
-Professionals</h2>
+                            <h2 className='sm:text-5xl text-2xl sm:w-[90%] w-full mClr mt-5 text-center mx-auto'>Entrust Your Growth to Professionals</h2>
                         </div>
+
+                        <div className='py-10'>
+                            <div className="container pt-20 pb-10 align-center px-10 overflow-hidden">
+
+                                <Swiper
+                                    slidesPerView={1}
+                                    spaceBetween={5}
+                                    loop={true}
+                                    breakpoints={{
+                                        // when window width is >= 640px
+                                        540: {
+                                          width: 540,
+                                          slidesPerView: 1,
+                                        },
+
+                                        768: {
+                                            width: 768,
+                                            slidesPerView: 2,
+                                        },
+                                        // when window width is >= 768px
+                                        1024: {
+                                          width: 1024,
+                                          slidesPerView: 3,
+                                        },
+                                      }}
+                                    className="mySwiper w-full"
+                                >
+                                    <SwiperSlide className=''>
+                                        <div className='testimonial-box md '>
+                                            <div className='testimonial-img'> <img src={c1} alt="" /></div>
+                                            <p className='testimonial-des text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat repudiandae perspiciatis, sed quos culpa possimus nihil fugit animi aliquid! Ad, fugiat culpa.</p>
+                                            <div className='testimonial-icon'><i className="ri-double-quotes-r"></i></div>
+                                            <div className='testimonial-name flex flex-col items-center'>
+                                                <h5>Jenny Dilson</h5>
+                                                <p>Director of Content</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className='testimonial-box '>
+                                            <div className='testimonial-img'> <img src={c1} alt="" /></div>
+                                            <p className='testimonial-des text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat repudiandae perspiciatis, sed quos culpa possimus nihil fugit animi aliquid! Ad, fugiat culpa.</p>
+                                            <div className='testimonial-icon'><i className="ri-double-quotes-r"></i></div>
+                                            <div className='testimonial-name flex flex-col items-center'>
+                                                <h5>Jenny Dilson</h5>
+                                                <p>Director of Content</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className='testimonial-box '>
+                                            <div className='testimonial-img'> <img src={c1} alt="" /></div>
+                                            <p className='testimonial-des text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat repudiandae perspiciatis, sed quos culpa possimus nihil fugit animi aliquid! Ad, fugiat culpa.</p>
+                                            <div className='testimonial-icon'><i className="ri-double-quotes-r"></i></div>
+                                            <div className='testimonial-name flex flex-col items-center'>
+                                                <h5>Jenny Dilson</h5>
+                                                <p>Director of Content</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className='testimonial-box '>
+                                            <div className='testimonial-img'> <img src={c1} alt="" /></div>
+                                            <p className='testimonial-des text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat repudiandae perspiciatis, sed quos culpa possimus nihil fugit animi aliquid! Ad, fugiat culpa.</p>
+                                            <div className='testimonial-icon'><i className="ri-double-quotes-r"></i></div>
+                                            <div className='testimonial-name flex flex-col items-center'>
+                                                <h5>Jenny Dilson</h5>
+                                                <p>Director of Content</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <div className='testimonial-box '>
+                                            <div className='testimonial-img'> <img src={c1} alt="" /></div>
+                                            <p className='testimonial-des text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat repudiandae perspiciatis, sed quos culpa possimus nihil fugit animi aliquid! Ad, fugiat culpa.</p>
+                                            <div className='testimonial-icon'><i className="ri-double-quotes-r"></i></div>
+                                            <div className='testimonial-name flex flex-col items-center'>
+                                                <h5>Jenny Dilson</h5>
+                                                <p>Director of Content</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                            </div>
+                        </div>
+
                     </div>
-                </section>
+                </section> */}
             </main>
         </>
     )
