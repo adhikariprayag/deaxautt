@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../scss/main.scss'
+import Button from '../components/Button'
+
+//IMPORTING IMAGES
+import s1 from '../assets/service_icon_1.svg'
+import s2 from '../assets/service_icon_2.svg'
+import s3 from '../assets/service_icon_3.svg'
+import s4 from '../assets/service_icon_4.png'
 
 function Services() {
   return (
@@ -55,7 +62,59 @@ function Services() {
             <p className='py-16 text-center font-light text-lg'>Bring them together and you overcome the ordinary. <span className='underline span-text'><a href="">See what we do</a></span></p>
           </div>
         </section>
-        
+
+        <section className="services-main">
+          <div className="container px-10 flex justify-between items-center lg:flex-row flex-col gap-5">
+            <div className="lg:w-[30%] w-full">
+              <h6 className='rClr font-bold'>WE CAN DO FOR YOU</h6>
+              <h2 className='text-5xl text-white font-bold py-5'>Services We can Help You.</h2>
+              <p className='text-gray-400 pb-5'>Lorem ipsum dolor sit amet consectetur. Ut a tellus suspendisse nulla aliquam. Risu dumm amet facilisis the egestas.</p>
+              <div>
+                <Button cta="See All Services" style="red" link='/' />
+              </div>
+            </div>
+
+            <div className="lg:w-[60%] w-full  ">
+              <div className='flex gap-5 flex-wrap sm:flex-nowrap'>
+                <div className="service-box flex flex-col gap-5">
+                  <div className='w-full flex justify-start'><img src={s1} alt="" /></div>
+                  <h2 className='text-white font-semibold text-3xl'>UI/UX Design</h2>
+                  <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
+                  <a href=""><p className='text-white'>Learn More</p></a>
+                </div>
+                <div className="service-box flex flex-col gap-5">
+                  <div className='w-full flex justify-start'><img src={s2} alt="" /></div>
+                  <h2 className='text-white font-semibold text-3xl'>Web Development</h2>
+                  <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
+                  <a href=""><p className='text-white'>Learn More</p></a>
+                </div>
+              </div>
+
+              <div className='flex gap-5 mt-5 flex-wrap sm:flex-nowrap'>
+                <div className="service-box flex flex-col gap-5">
+                  <div className='w-full flex justify-start'><img src={s3} alt="" /></div>
+                  <h2 className='text-white font-semibold text-3xl'>UI/UX Design</h2>
+                  <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
+                  <a href=""><p className='text-white'>Learn More</p></a>
+                </div>
+                <div className="service-box flex flex-col gap-5">
+                  <div className='w-full flex justify-start'><img src={s4} alt="" /></div>
+                  <h2 className='text-white font-semibold text-3xl'>Web Development</h2>
+                  <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
+                  <a href=""><p className='text-white'>Learn More</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="services-our py-28">
+          <div className="container px-10 flex flex-col items-center gap-5">
+            <h5 className="title-sm">OUR SERVICES</h5>
+            <h2 className='sm:text-5xl text-2xl text-center sm:w-[70%] w-full mClr'>Technology services built specifically for your business</h2>
+          </div>
+        </section>
+
       </main>
     </>
   )

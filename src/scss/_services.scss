@@ -21,4 +21,33 @@
             }
         }
     }
+
+    &-main{
+        background-color: #161E17;
+        padding-block: 5rem;
+
+        .service-box{
+            background-color: #212822;
+            border-radius: 25px;
+            padding: 2.5rem 2rem;
+            @include transition;
+
+            &:hover{
+                background-color: #fff;
+
+                h2{
+                    color: $main;
+                }
+
+                a p{
+                    color: $main;
+                    @include transition;
+
+                    &:hover{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
 }

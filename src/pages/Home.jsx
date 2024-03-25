@@ -183,7 +183,7 @@ function Home() {
                         <div className='flex flex-col items-center'>
                             <div className="title-sm ">WHY CHOOSE US</div>
                             <div className="w-full">
-                                <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 '>We help you Overcome your Technology</h2>
+                                <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 text-center'>We help you Overcome your Technology</h2>
                                 <div className='py-10 flex flex-col gap-10'>
                                     <div className='flex items-center gap-5 flex-wrap'>
                                         <div><img src={icon1} alt="" className='img-icon img-icon-1 bg-[#FFF7DE]' /></div>

@@ -29,9 +29,9 @@ function Footer() {
 
       <section className='footer2 py-5'>
         <div className="container container-top flex flex-col lg:flex-row px-10 gap-10 py-8">
-          <div className="lg:w-[60%] w-full flex text-white flex-wrap">
+          <div className="lg:w-[60%] w-full flex text-white flex-wrap ">
 
-            <div className='sm:w-1/3 w-full'>
+            <div className='sm:w-1/3 w-full mt-2'>
               <img src={logo} alt="" />
               <p className='w-[90%] py-5 text-gray-400'>Lorem ipsum dolo consectetur the adipiscing Lobortis mattis neque adipiscing nisl.</p>
               <div className='flex gap-5 text-gray-400'>
@@ -42,7 +42,7 @@ function Footer() {
               </div>
             </div>
 
-            <ul className='sm:w-1/3 w-full text-gray-400 flex flex-col gap-5 '>
+            <ul className='sm:w-1/3 w-full text-gray-400 flex flex-col gap-5 mt-2 '>
               <li ><a href="" className='text-xl font-bold text-white'>Our Company</a></li>
               <li className='footer-links'><a href="">Company</a></li>
               <li className='footer-links'><a href="">Careers</a></li>
@@ -51,7 +51,7 @@ function Footer() {
               <li className='footer-links'><a href="">Web Services</a></li>
             </ul>
 
-            <ul className='sm:w-1/3 w-full text-gray-400 flex flex-col gap-5'>
+            <ul className='sm:w-1/3 w-full text-gray-400 flex flex-col gap-5 mt-2'>
               <li><a href="" className='text-xl font-bold text-white'>Services</a></li>
               <li className='footer-links'><a href="">Strategy & Research</a></li>
               <li className='footer-links'><a href="">Data Analytics</a></li>
