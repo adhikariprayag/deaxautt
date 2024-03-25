@@ -1,3 +1,5 @@
+/*-----MAIN FOOTER CLASSES-----*/
+
 footer {
 
     .footer {
@@ -43,5 +45,42 @@ footer {
 
     .footer2 {
         background-color: #0C0833;
+        background-image: url(../assets/map.png);
+        background-position: center;
+
+        .container-top{
+            border-bottom: 0.01px solid rgb(198, 198, 198);
+        }
+
+        .footer-links {
+            a {
+                @include transition;
+
+                &:hover {
+                    color: $dred;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .form-section{
+            position: relative;
+        }
+        
+        input{
+            border-bottom: 1.5px solid rgb(106, 106, 106);
+        }
+
+        .submit-btn{
+            padding: 5px 10px;
+            background-color: $dred;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2rem;
+            position: absolute;
+            right: 0;
+            
+            @include shadow;
+        }
     }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 
-import Button from '../components/Button'
 import '../scss/main.scss'
+import Button from '../components/Button'
 
 //IMPORTING REACT-SLICK
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 //IMPORTING SWIPER JS
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -85,7 +86,6 @@ function Home() {
         ]
     };
 
-    //SWIPER-JS
 
     return (
         <>
