@@ -5,4 +5,5 @@ Tools Used:
   <li>Tailwind CSS</li>
   <li>SCSS</li>
   <li>Animate.css</li>
+  <li>React Slick</li>
 </ul>
