@@ -63,7 +63,7 @@ function Footer() {
           </div>
 
           <div className="lg:w-[40%] w-full flex flex-col flex-wrap gap-8">
-            <h3 className='w-[60%] text-white font-bold text-3xl'>Get Latest Updates and big deals</h3>
+            <h3 className='md:w-[60%] w-full text-white font-bold text-3xl'>Get Latest Updates and big deals</h3>
             <form action="" className='w-full form-section'>
               <input type="text" placeholder='Get News & Updates' className='w-full py-3 px-1 bg-transparent text-white outline-none' />
               <button type="submit" className='submit-btn'><i className="ri-send-plane-line"></i></button>

@@ -376,4 +376,128 @@
     //     }
 
     // }
+
+    &-achievements {
+        background-image: linear-gradient(rgba(0, 0, 18, 0.588), rgba(0, 0, 78, 0.566)), url(../assets/facts-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        z-index: 1;
+
+        &-box {
+
+            border-radius: 25px;
+            padding: 2rem 2rem;
+            font-size: 2rem;
+
+            @media (max-width: 640px) {
+                font-size: 1.5rem;
+            }
+
+
+            i {
+                font-size: 3rem;
+            }
+        }
+
+        &-box1 {
+            color: #FFC90B;
+            @include transition;
+            border: 1px solid #FFC90B;
+
+            &:hover {
+                background-color: #FFC90B;
+                color: #fff;
+            }
+        }
+
+        &-box2 {
+            color: $green;
+            border: 1px solid $green;
+            @include transition;
+
+            &:hover {
+                background-color: $green;
+                color: #fff;
+            }
+        }
+
+        &-box3 {
+            color: #15F0FE;
+            @include transition;
+            border: 1px solid #15F0FE;
+
+            &:hover {
+                background-color: #15F0FE;
+                color: #fff;
+            }
+        }
+    }
+
+    &-blogs {
+        .home-blogs-box {
+            border-radius: 25px;
+            @include shadow;
+            box-sizing: border-box;
+            overflow: hidden;
+            @include transition;
+
+            img{
+                border-radius: 25px 25px 0px 0px;
+                @include transition;
+            }
+
+            &:hover{
+                img{
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        a h2{
+
+            @include transition;
+            &:hover{
+                color: $sky !important;
+            }
+        }
+
+        .blog-btn{
+            width: fit-content;
+            color: $main;
+            padding: 5px 8px;
+            border-radius: 5px ;
+            background-color: #9eaeaf1f;
+            cursor: pointer;
+            @include transition;
+
+            &:hover{
+                color: #fff;
+                background-color: $sky;
+            }
+        }
+
+        &-box-2{
+
+            border-radius: 25px ;
+            @include shadow;
+            overflow: hidden;
+            box-sizing: border-box;
+
+            img{
+                border-radius: 25px 0px 0px 25px;
+                @include transition;    
+
+                @media (max-width: 1024px) {
+                    border-radius: 25px;
+                }
+            }
+
+            &:hover{
+
+                img{
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
 }

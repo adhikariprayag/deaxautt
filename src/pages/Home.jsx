@@ -43,6 +43,12 @@ import c2 from '../assets/client2.png'
 import c3 from '../assets/client3.png'
 import c4 from '../assets/client4.png'
 import c5 from '../assets/client5.png'
+//-Blogs
+import b1 from '../assets/blog1.jpg'
+import b2 from '../assets/blog2.jpg'
+import b3 from '../assets/blog3.jpg'
+import b4 from '../assets/blog4.jpg'
+import b5 from '../assets/blog5.jpg'
 
 function Home() {
 
@@ -53,7 +59,6 @@ function Home() {
         centerMode: true,
         speed: 500,
         autoplay: true,
-        speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -183,7 +188,7 @@ function Home() {
                         <div className='flex flex-col items-center'>
                             <div className="title-sm ">WHY CHOOSE US</div>
                             <div className="w-full">
-                                <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 text-center'>We help you Overcome your Technology</h2>
+                                <h2 className='sm:text-5xl text-2xl sm:w-[50%] w-full mClr mt-5 text-center sm:text-left'>We help you Overcome your Technology</h2>
                                 <div className='py-10 flex flex-col gap-10'>
                                     <div className='flex items-center gap-5 flex-wrap'>
                                         <div><img src={icon1} alt="" className='img-icon img-icon-1 bg-[#FFF7DE]' /></div>
@@ -376,6 +381,114 @@ function Home() {
 
                     </div>
                 </section> */}
+
+
+                <section className=" home-achievements py-10 my-10  ">
+
+                    <div className="container flex flex-wrap gap-8 px-10 items-center justify-center">
+                        <div className='home-achievements-box home-achievements-box1 flex items-center sm:flex-nowrap flex-wrap sm:justify-center justify-start gap-5'>
+                            <div><i className="ri-sparkling-2-line"></i></div>
+                            <div>
+                                <h4>999%</h4>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                        <div className='home-achievements-box home-achievements-box2 flex items-center sm:flex-nowrap flex-wrap sm:justify-center justify-start gap-5'>
+                            <div><i className="ri-thumb-up-line"></i></div>
+                            <div>
+                                <h4>1155+</h4>
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                        <div className='home-achievements-box home-achievements-box3 flex items-center sm:flex-nowrap flex-wrap sm:justify-center justify-start gap-5'>
+                            <div><i className="ri-tools-line"></i></div>
+                            <div>
+                                <h4>1322+</h4>
+                                <p>Design Resource</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section className="home-blogs py-20">
+                    <div className="container flex justify-center flex-col gap-5 items-center px-5">
+                        <div className="title-sm mx-auto ">
+                            OUR BLOGS
+                        </div>
+
+                        <h2 className='sm:text-5xl text-2xl text-center sm:w-[50%] w-full mClr'>Entrust Your Growth to Professionals</h2>
+
+                        <div className='w-full pb-10 flex flex-col home-blogs-box'>
+                            <img src={b1} alt="" className='w-full h-[150px] md:h-full' />
+                            <div className='md:px-10 px-5 flex flex-col gap-4 mt-8'>
+                                <div className="blog-btn">It Solutions</div>
+                                <a href="" className='p-0 m-0'><h2 className='sm:text-4xl text-xl w-full mClr font-semiboldbold'>Creative advertising in our regular life became a information noise</h2></a>
+                            </div>
+
+                        </div>
+
+                        <div className='w-full flex justify-center lg:flex-nowrap flex-wrap xl:gap-10 gap-4 px-2'>
+
+                            <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
+                                <img src={b2} alt="" className='md:w-[50%] w-full h-[280px]' />
+                                
+                                <div className=' flex flex-col gap-4 py-5 ml-5'>
+                                    <div className="blog-btn">It Solutions</div>
+                                    <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How To Build Strong Customer Relationships For many User</h2></a>
+                                    <div className='flex gap-5 text-gray-500'>
+                                        <span className=''><i className="ri-calendar-2-line"></i> Jun 4, 2023</span>
+                                        <span><i className="ri-user-line"></i> David Martin</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
+                                <img src={b3} alt="" className='md:w-[50%] w-full h-[280px]' />
+                                
+                                <div className=' flex flex-col gap-4 py-5 ml-5'>
+                                    <div className="blog-btn">It Solutions</div>
+                                    <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>5 Ways Technology Has Improved Business has Today Done!</h2></a>
+                                    <div className='flex gap-5 text-gray-500'>
+                                        <span className=''><i className="ri-calendar-2-line"></i> Jun 4, 2023</span>
+                                        <span><i className="ri-user-line"></i> David Martin</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='w-full flex justify-center lg:flex-nowrap flex-wrap xl:gap-10 gap-4 px-2'>
+
+                            <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
+                                <img src={b4} alt="" className='md:w-[50%] w-full h-[280px]' />
+                                
+                                <div className=' flex flex-col gap-3 py-5 ml-5 px-2'>
+                                    <div className="blog-btn">It Services</div>
+                                    <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How Wireless Network Technology is Changing many Business</h2></a>
+                                    <div className='flex gap-5 text-gray-500'>
+                                        <span className=''><i className="ri-calendar-2-line"></i> Jun 4, 2023</span>
+                                        <span><i className="ri-user-line"></i> David Martin</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
+                                <img src={b5} alt="" className='md:w-[50%] w-full h-[280px]' />
+                                
+                                <div className=' flex flex-col gap-4 py-5 ml-5'>
+                                    <div className="blog-btn">Technology</div>
+                                    <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How Technology Made Businesses More works Efficient Do</h2></a>
+                                    <div className='flex gap-5 text-gray-500'>
+                                        <span className=''><i className="ri-calendar-2-line"></i> Jun 4, 2023</span>
+                                        <span><i className="ri-user-line"></i> David Martin</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
             </main>
         </>
     )
