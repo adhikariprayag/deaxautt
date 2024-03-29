@@ -22,29 +22,278 @@
         }
     }
 
-    &-main{
+    &-main {
         background-color: #161E17;
         padding-block: 5rem;
 
-        .service-box{
+        .service-box {
             background-color: #212822;
             border-radius: 25px;
             padding: 2.5rem 2rem;
             @include transition;
 
-            &:hover{
+            @media (max-width: 320px) {
+                padding: 1rem;
+            }
+
+            &:hover {
                 background-color: #fff;
 
-                h2{
+                h2 {
                     color: $main;
                 }
 
-                a p{
+                a p {
                     color: $main;
                     @include transition;
 
-                    &:hover{
+                    &:hover {
                         color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    &-our {
+        .our-box {
+            padding: 2rem 1rem;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            @include transition;
+
+            @media (min-width: 980px) {
+                width: 30% !important;
+            }
+
+            h5 {
+                color: $main;
+                font-size: 18px;
+                font-weight: 500;
+                @include transition;
+            }
+
+            p {
+                color: rgb(154, 154, 154);
+                font-weight: 200;
+            }
+
+            .img-con {
+                width: 40px;
+                height: 40px;
+                padding: .5rem;
+                aspect-ratio: 1;
+                // background-color: #212822;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .our-box-icon {
+                    position: absolute;
+                    width: 3px;
+                    height: 80px;
+                    background-color: rgb(184, 183, 183);
+                    left: 50%;
+                    top: -50%;
+                    z-index: -1;
+                    // transform: translateX(-50%);
+                    transition: all 0.3s linear;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: rgb(184, 183, 183);
+                    top: -55%;
+                    left: 53%;
+                    transform: translate(-50%);
+                    @include transition;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: rgb(184, 183, 183);
+                    bottom: -55%;
+                    left: 53%;
+                    transform: translate(-50%);
+                    @include transition;
+                }
+            }
+
+            &:hover {
+                @include shadow;
+            }
+        }
+
+        .our-box-1 {
+            .img-con {
+                background-color: $sky !important;
+            }
+
+            &:hover {
+                h5 {
+                    color: $sky;
+                    @include transition;
+
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: $sky;
+                    }
+
+                    .our-box-icon {
+                        background-color: $sky;
+                    }
+                }
+            }
+        }
+
+        .our-box-2 {
+            .img-con {
+                background-color: $red !important;
+            }
+
+            &:hover {
+
+                h5 {
+                    color: $red;
+                    @include transition;
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: $red;
+                    }
+
+                    .our-box-icon {
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+
+        .our-box-3 {
+
+            .img-con {
+                background-color: $dark !important;
+            }
+
+            &:hover {
+                h5 {
+                    color: $dark;
+                    @include transition;
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: $dark;
+                    }
+
+                    .our-box-icon {
+                        background-color: $dark;
+                    }
+                }
+            }
+        }
+
+        .our-box-4 {
+            .img-con {
+                background-color: $main !important;
+            }
+
+            &:hover {
+                h5 {
+                    color: $main;
+                    @include transition;
+
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: $main;
+                    }
+
+                    .our-box-icon {
+                        background-color: $main;
+                    }
+                }
+            }
+        }
+
+        .our-box-5 {
+            .img-con {
+                background-color: orange !important;
+            }
+
+            &:hover {
+                h5 {
+                    color: orange;
+                    @include transition;
+
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: orange;
+                    }
+
+                    .our-box-icon {
+                        background-color: orange;
+                    }
+                }
+            }
+        }
+
+        .our-box-6 {
+            .img-con {
+                background-color: $green !important;
+            }
+
+            &:hover {
+                h5 {
+                    color: $green;
+                    @include transition;
+
+                }
+
+                .img-con {
+
+                    &::before,
+                    &::after {
+                        background-color: $green;
+                    }
+
+                    .our-box-icon {
+                        background-color: $green;
                     }
                 }
             }

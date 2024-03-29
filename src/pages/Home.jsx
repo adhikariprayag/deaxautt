@@ -432,7 +432,7 @@ function Home() {
 
                             <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
                                 <img src={b2} alt="" className='md:w-[50%] w-full h-[280px]' />
-                                
+
                                 <div className=' flex flex-col gap-4 py-5 ml-5'>
                                     <div className="blog-btn">It Solutions</div>
                                     <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How To Build Strong Customer Relationships For many User</h2></a>
@@ -445,7 +445,7 @@ function Home() {
 
                             <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
                                 <img src={b3} alt="" className='md:w-[50%] w-full h-[280px]' />
-                                
+
                                 <div className=' flex flex-col gap-4 py-5 ml-5'>
                                     <div className="blog-btn">It Solutions</div>
                                     <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>5 Ways Technology Has Improved Business has Today Done!</h2></a>
@@ -462,7 +462,7 @@ function Home() {
 
                             <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
                                 <img src={b4} alt="" className='md:w-[50%] w-full h-[280px]' />
-                                
+
                                 <div className=' flex flex-col gap-3 py-5 ml-5 px-2'>
                                     <div className="blog-btn">It Services</div>
                                     <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How Wireless Network Technology is Changing many Business</h2></a>
@@ -475,7 +475,7 @@ function Home() {
 
                             <div className='lg:w-1/2 w-full flex md:flex-row flex-col home-blogs-box-2 h-full items-center gap-5'>
                                 <img src={b5} alt="" className='md:w-[50%] w-full h-[280px]' />
-                                
+
                                 <div className=' flex flex-col gap-4 py-5 ml-5'>
                                     <div className="blog-btn">Technology</div>
                                     <a href="" className='p-0 m-0'><h2 className=' w-full text-lg mClr font-semiboldbold'>How Technology Made Businesses More works Efficient Do</h2></a>
@@ -489,6 +489,21 @@ function Home() {
                         </div>
                     </div>
                 </section>
+
+                {/* <section className="home-team">
+                    <Swiper
+                        spaceBetween={50}
+                        slidesPerView={3}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        <SwiperSlide>Slide 1</SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                        ...
+                    </Swiper>
+                </section> */}
             </main>
         </>
     )

@@ -9,6 +9,7 @@ import s1 from '../assets/service_icon_1.svg'
 import s2 from '../assets/service_icon_2.svg'
 import s3 from '../assets/service_icon_3.svg'
 import s4 from '../assets/service_icon_4.png'
+import service_icon from '../assets/service-icon.svg'
 
 function Services() {
   return (
@@ -78,13 +79,13 @@ function Services() {
               <div className='flex gap-5 flex-wrap sm:flex-nowrap'>
                 <div className="service-box flex flex-col gap-5">
                   <div className='w-full flex justify-start'><img src={s1} alt="" /></div>
-                  <h2 className='text-white font-semibold text-3xl'>UI/UX Design</h2>
+                  <h2 className='text-white font-semibold text-xl sm:text-3xl'>UI/UX Design</h2>
                   <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
                   <a href=""><p className='text-white'>Learn More</p></a>
                 </div>
                 <div className="service-box flex flex-col gap-5">
                   <div className='w-full flex justify-start'><img src={s2} alt="" /></div>
-                  <h2 className='text-white font-semibold text-3xl'>Web Development</h2>
+                  <h2 className='text-white font-semibold text-xl sm:text-3xl'>Web Development</h2>
                   <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
                   <a href=""><p className='text-white'>Learn More</p></a>
                 </div>
@@ -93,13 +94,13 @@ function Services() {
               <div className='flex gap-5 mt-5 flex-wrap sm:flex-nowrap'>
                 <div className="service-box flex flex-col gap-5">
                   <div className='w-full flex justify-start'><img src={s3} alt="" /></div>
-                  <h2 className='text-white font-semibold text-3xl'>UI/UX Design</h2>
+                  <h2 className='text-white font-semibold text-xl sm:text-3xl'>UI/UX Design</h2>
                   <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
                   <a href=""><p className='text-white'>Learn More</p></a>
                 </div>
                 <div className="service-box flex flex-col gap-5">
                   <div className='w-full flex justify-start'><img src={s4} alt="" /></div>
-                  <h2 className='text-white font-semibold text-3xl'>Web Development</h2>
+                  <h2 className='text-white font-semibold text-xl sm:text-3xl'>Web Development</h2>
                   <p className='text-gray-400'>Lorem ipsum dolor amet consetetur. Ut tellus suspen aliquam.</p>
                   <a href=""><p className='text-white'>Learn More</p></a>
                 </div>
@@ -112,6 +113,77 @@ function Services() {
           <div className="container px-10 flex flex-col items-center gap-5">
             <h5 className="title-sm">OUR SERVICES</h5>
             <h2 className='sm:text-5xl text-2xl text-center sm:w-[70%] w-full mClr'>Technology services built specifically for your business</h2>
+            <div className='w-full flex gap-5 justify-center flex-wrap  mt-10'>
+              <div className=' w-full our-box our-box-1'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>Branding Support</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+              <div className=' w-full our-box our-box-2'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>Business Planning</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+              <div className=' w-full our-box our-box-3'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>Analytic Solutions</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div className='w-full flex gap-5 justify-center flex-wrap'>
+              <div className=' w-full our-box our-box-4'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>Data Security</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+              <div className=' w-full our-box our-box-5'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>It consultancy</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+              <div className=' w-full our-box our-box-6'>
+                <div className='img-con'>
+                  <span className='our-box-icon'></span>
+                  <img src={service_icon} alt="" />
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <h5>It Management</h5>
+                  <p>Lorem ipsum dolor sity amet consectetur suspen disse the aliquam many done.</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
